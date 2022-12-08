@@ -43,7 +43,7 @@ body {
 }
 
 .status-badge {
-  @apply px-2 py-0.5 text-xs uppercase rounded-full text-white font-semibold absolute top-4 right-7;
+  @apply px-2 py-0.5 text-xs uppercase rounded-full text-green-600 font-semibold absolute top-4 right-7;
 }
 
 .download-btn {
