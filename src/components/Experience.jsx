@@ -140,9 +140,17 @@ function ExperienceBlock({item, index}) {
                 </div>
                 <p className="text-gray-600">{item.description}</p>
                 <ul className="list-disc list-inside text-gray-600">
-                    {item.bulletPoints.map((bulletPoint, index) => (
-                        <li key={index}>{bulletPoint}</li>
-                    ))}
+                    {item.bulletPoints.map((bulletPoint, index) => {
+                        // Return list item that wraps but lines up with the text on the line above
+                        return (
+                            <li key={index} className="flex items-start">
+                                <div className="flex-shrink-0">
+                                    &bull;
+                                </div>
+                                <div className="ml-2">{bulletPoint}</div>
+                            </li>
+                        );
+                    })}
                 </ul>
                 {/* Only show the divider if it's not the last element */}
                 {index !== experienceItems.length - 1 && <div className="border-b border-gray-200 text-xs"></div>
