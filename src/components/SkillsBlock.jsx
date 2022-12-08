@@ -11,11 +11,12 @@ const skills = [
     'Flask',
 ]
 
-const SkillsBlock = () => <div className="p-7 block-section flow-root">
-    <h2 className="block-title">Skills</h2>
-    <div className="-m-2 flex flex-wrap">
-        {skills.map(skill => <span className="skill-tag">{skill}</span>)}
+const SkillsBlock = () => (
+    <div className="p-7 block-section flow-root">
+        <h2 className="block-title">Skills</h2>
+        <div className="-m-2 flex flex-wrap">
+            {skills.map((skill, i) => <span key={i} className="skill-tag">{skill}</span>)}
 
-    </div>
-</div>;
+        </div>
+    </div>);
 export default SkillsBlock;
