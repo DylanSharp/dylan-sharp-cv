@@ -3,10 +3,14 @@ import resumePdf from "../../public/dylan_sharp_resume.pdf";
 
 const ProfileBlock = () => {
     const onClickDownload = () => {
-        window
-            .open(resumePdf, "_blank")
-            .focus();
+        const link = document.createElement('a');
+        link.href = resumePdf;
+        link.download = 'dylan-sharp-resume.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
     }
+
     return (
         <div className="shadow rounded-xl overflow-hidden">
             <div className="h-32 bg-gradient-to-l from-orange-300 to-fuchsia-500"></div>
