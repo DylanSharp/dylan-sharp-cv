@@ -1,7 +1,7 @@
 import profilePhoto from "../assets/profile_photo.png";
 
 const ProfileBlock = () => <div className="shadow rounded-xl overflow-hidden">
-    <div className="h-32 bg-gradient-to-r from-orange-300 to-fuchsia-500"></div>
+    <div className="h-32 bg-gradient-to-l from-orange-300 to-fuchsia-500"></div>
     <div className="pt-14 p-7 bg-white relative">
         <span className="status-badge bg-green-200 text-gray-900">Available</span>
         <a href="/"><img src={profilePhoto} alt="Avatar" className="user-photo"/></a>
