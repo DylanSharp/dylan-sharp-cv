@@ -17,7 +17,8 @@ const experienceItems = [
         ),
         description: 'This was a 3 month project-based contract to build an internal tool for the Ghost team.',
         bulletPoints: [
-            'Built a React app to replace a CLI tool that support team uses to manage users and accounts.',
+            'Built a React app to replace a CLI tool that the support team uses to manage users and accounts etc.',
+            'Built a React app to replace a CLI tool that the support team uses to manage users and accounts etc.',
         ]
     },
     {
