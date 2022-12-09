@@ -1,5 +1,5 @@
 import profilePhoto from "../assets/profile_photo.png";
-import resumePdf from "../../public/dylan_sharp_resume.pdf";
+import resumePdf from "../assets/dylan_sharp_resume.pdf";
 
 const ProfileBlock = () => {
     const onClickDownload = () => {
@@ -22,11 +22,11 @@ const ProfileBlock = () => {
                 <div className="flex group">
                     <button
                         onClick={onClickDownload}
-                        className="download-btn">Download CV
+                        className="download-btn print:hidden">Download CV
                     </button>
                     <button
                         onClick={onClickDownload}
-                        className="download-btn-icon"
+                        className="download-btn-icon print:hidden"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none"
                              viewBox="0 0 24 24" stroke="currentColor">
