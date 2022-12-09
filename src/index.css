@@ -47,27 +47,27 @@ body {
 }
 
 .download-btn {
-  @apply w-full py-3 rounded-l-lg text-base font-semibold bg-amber-500 text-white transition duration-200 group-hover:bg-amber-600;
+  @apply w-full py-3 rounded-l-lg text-base font-semibold bg-sky-500 text-white group-hover:bg-orange-400;
 }
 
 .download-btn-icon {
-  @apply px-5 py-3 rounded-r-lg bg-amber-600 text-white;
+  @apply px-5 py-3 rounded-r-lg bg-sky-600 text-white group-hover:bg-orange-700;
 }
 
 /* Skill Block */
 
 .skill-tag {
-  @apply m-1 px-4 py-1.5 rounded-lg text-sm font-medium text-amber-600 bg-amber-100;
+  @apply m-1 px-4 py-1.5 rounded-lg text-sm font-medium text-sky-600 bg-sky-100;
 }
 
 /* About Me Block */
 
 .mail-link {
-  @apply flex items-center space-x-1 text-amber-500 font-medium;
+  @apply flex items-center space-x-1 text-sky-500 font-medium;
 }
 
 .social-link-hover {
-  @apply transition duration-300 hover:text-amber-600;
+  @apply transition duration-100 hover:text-amber-600;
 }
 
 .menu-link {
@@ -75,11 +75,11 @@ body {
 }
 
 .menu-link-active {
-  @apply inline-flex pb-5 border-b-2 text-amber-500  border-amber-500;
+  @apply inline-flex pb-5 border-b-2 text-sky-500  border-sky-500;
 }
 
 .menu-link-hover {
-  @apply transition duration-300 hover:text-amber-600 hover:border-amber-600;
+  @apply transition duration-100 hover:text-amber-600 hover:border-sky-600;
 }
 
 /* Experience Block */
@@ -89,7 +89,7 @@ body {
 }
 
 .job-item-badge {
-  @apply inline-flex px-2 py-0.5 text-xs font-medium capitalize rounded-lg text-amber-600 bg-amber-100;
+  @apply inline-flex px-2 py-0.5 text-xs font-medium capitalize rounded-lg text-sky-600 bg-sky-100;
 }
 
 /* Articles Block */
