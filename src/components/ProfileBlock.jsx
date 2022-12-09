@@ -15,7 +15,7 @@ const ProfileBlock = () => {
     return (
         <div className="shadow rounded-xl overflow-hidden">
             <div className="h-32 bg-cover bg-center"
-                 style={{backgroundImage: `url(${coverImage()})`}}>
+                 style={{backgroundImage: `url(${coverImage})`}}>
             </div>
             <div className="pt-14 p-7 bg-white relative">
                 <span className="status-badge bg-green-200 text-gray-900">Available</span>
