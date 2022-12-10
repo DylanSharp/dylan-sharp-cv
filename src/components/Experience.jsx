@@ -8,7 +8,7 @@ const experienceItems = [
     {
         title: 'Software Engineer',
         company: 'Ghost',
-        location: 'South Africa',
+        location: 'Remote (Singapore Based)',
         dateRange: 'Oct 2022 - Present',
         logo: (
             <a href="https://ghost.org/" target="_blank" referrerPolicy="no-referrer">
@@ -37,7 +37,7 @@ const experienceItems = [
     {
         title: 'Software Engineer',
         company: 'Hotjar',
-        location: 'Malta, Remote',
+        location: 'Remote (Malta Based)',
         dateRange: 'Dec 2017 - March 2021',
         logo: (
             <a href="https://hotjar.com/" target="_blank" referrerPolicy="no-referrer">
@@ -56,7 +56,7 @@ const experienceItems = [
     {
         title: 'Software Engineer',
         company: 'Stratech',
-        location: 'South Africa, Remote',
+        location: 'Remote (South Africa Based)',
         dateRange: 'Nov 2016 - Oct 2017',
         logo: (
             <a href="https://stratech.co.za/" target="_blank" referrerPolicy="no-referrer">
@@ -75,7 +75,7 @@ const experienceItems = [
     {
         title: 'Junior Software Engineer',
         company: 'Modality Apps',
-        location: 'South Africa, Remote',
+        location: '50% Remote (South Africa Based)',
         dateRange: 'Mar 2015 - Oct 2016',
         logo: (
             <a href="https://modalityapps.com" target="_blank" referrerPolicy="no-referrer">
