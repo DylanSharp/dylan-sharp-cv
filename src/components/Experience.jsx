@@ -2,7 +2,7 @@ import ghostLogo from '../assets/ghost_logo.png';
 import hotjarLogo from '../assets/hotjar_logo.png';
 import stratechLogo from '../assets/stratech_logo.png';
 import modalityAppsLogo from '../assets/ma_logo.png';
-import sabbaticalLogo from '../assets/sabatical_logo.jpeg';
+import {BriefcaseIcon} from "../assets/briefcase.jsx";
 
 const experienceItems = [
     {
@@ -25,8 +25,8 @@ const experienceItems = [
         company: 'NA',
         location: 'South Africa',
         dateRange: 'March 2021 - Oct 2022',
-        logo: <img src={sabbaticalLogo} alt="logo" className="w-10 h-10 object-contain scale-[1]"/>,
-        description: 'I made the decision to take time off to spend with my family and recharge.',
+        logo: <BriefcaseIcon />,
+        description: 'I took time off to spend with my family and try new things.',
         bulletPoints: [
             'Spent time with my my wife and (at the time) newborn son.',
             'Travelled in South Africa.',
