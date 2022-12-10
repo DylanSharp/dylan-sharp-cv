@@ -1,11 +1,11 @@
 const HighlightedText = ({text}) => {
     const inkStyles = {
-        transform: `skew(15deg)  rotate(-2deg)`,
-        height: '1rem',
+        transform: `skew(15deg)  rotate(-3deg)`,
+        height: '1.2rem',
         mixBlendMode: 'multiply',
-        width: `11rem`,
-        top: `40%`,
-        right: `1%`,
+        width: `12rem`,
+        top: `20%`,
+        right: `-10px`,
     };
     return (
         <span className="relative">
