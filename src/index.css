@@ -38,10 +38,6 @@ body {
 
 /* User Block */
 
-.user-photo {
-  @apply w-20 h-20 rounded-xl border-2 border-white shadow absolute -top-10;
-}
-
 .status-badge {
   @apply px-2 py-0.5 text-xs uppercase rounded-full text-yellow-600 font-semibold absolute top-4 right-7;
 }
