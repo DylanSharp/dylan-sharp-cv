@@ -47,7 +47,7 @@ body {
 }
 
 .download-btn {
-  @apply w-full py-3 rounded-l-lg text-base font-semibold bg-sky-500 text-white group-hover:bg-yellow-300;
+  @apply w-full py-3 rounded-l-lg text-base font-semibold bg-[#0ea5e9db] text-white group-hover:bg-yellow-300 group-hover:text-yellow-600;
 }
 
 .download-btn-icon {
@@ -57,7 +57,7 @@ body {
 /* Skill Block */
 
 .skill-tag {
-  @apply m-1 px-4 py-1.5 rounded-lg text-sm font-medium text-sky-600 bg-sky-100;
+  @apply m-1 px-4 py-1.5 rounded-lg text-sm font-medium text-sky-600 bg-sky-100 hover:text-yellow-600 hover:bg-yellow-200 cursor-default;
 }
 
 /* About Me Block */
@@ -89,7 +89,7 @@ body {
 }
 
 .job-item-badge {
-  @apply inline-flex px-2 py-0.5 text-xs font-medium capitalize rounded-lg text-sky-600 bg-sky-100;
+  @apply inline-flex px-2 py-0.5 text-xs font-medium capitalize rounded-lg text-yellow-600 bg-yellow-100 cursor-default;
 }
 
 /* Articles Block */
