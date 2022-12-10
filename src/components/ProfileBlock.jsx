@@ -19,7 +19,9 @@ const ProfileBlock = () => {
             </div>
             <div className="pt-14 p-7 bg-white relative">
                 <span className="status-badge bg-yellow-200">Available</span>
-                <a href="/"><img src={profilePhoto} alt="Avatar" className="user-photo"/></a>
+                <div className="">
+                <img src={profilePhoto} alt="Avatar" className="user-photo z-20 transition ease-in-out hover:translate-x-[90px] hover:scale-[3]"/>
+                </div>
                 <div className="text-2xl font-semibold mb-1.5">Dylan Sharp</div>
                 <div className="text-md text-gray-400 mb-7">Fullstack<br/>Software Engineer</div>
                 <div className="flex group">
