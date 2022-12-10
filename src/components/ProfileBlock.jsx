@@ -18,7 +18,7 @@ const ProfileBlock = () => {
                  style={{backgroundImage: `url(${coverImage})`}}>
             </div>
             <div className="pt-14 p-7 bg-white relative">
-                <span className="status-badge bg-green-200 text-gray-900">Available</span>
+                <span className="status-badge bg-yellow-200">Available</span>
                 <a href="/"><img src={profilePhoto} alt="Avatar" className="user-photo"/></a>
                 <div className="text-2xl font-semibold mb-1.5">Dylan Sharp</div>
                 <div className="text-md text-gray-400 mb-7">Fullstack<br/>Software Engineer</div>

@@ -1,22 +1,18 @@
+function RowItem({label, value}) {
+    return <div className="flex justify-between">
+        <div className="text-gray-400">{label}</div>
+        <div className="font-medium text-right text-gray-600">{value}</div>
+    </div>;
+}
+
 const InformationBlock = () => <div className="p-7 block-section">
     <h2 className="block-title">Information</h2>
     <div className="space-y-4">
-        <div className="flex justify-between">
-            <div className="text-gray-400">Location</div>
-            <div className="font-medium text-right text-gray-600">South Africa</div>
-        </div>
-        <div className="flex justify-between">
-            <div className="text-gray-400">Experience</div>
-            <div className="font-medium text-right text-gray-600">6+ years</div>
-        </div>
-        <div className="flex justify-between">
-            <div className="text-gray-400">Available from</div>
-            <div className="font-medium text-right text-gray-600">Jan 2023</div>
-        </div>
-        <div className="flex justify-between">
-            <div className="text-gray-400">Relocation</div>
-            <div className="font-medium text-right text-gray-600">No</div>
-        </div>
+        <RowItem label="Location" value="South Africa"/>
+        <RowItem label="Experience" value="6+ years"/>
+        <RowItem label="Available from" value="Jan 2023"/>
+        <RowItem label="Relocation" value="No"/>
+        <RowItem label="Age" value="33"/>
     </div>
 </div>;
 export default InformationBlock;
