@@ -1,4 +1,4 @@
-import profilePhoto from "../assets/profile_photo.png";
+import profilePhoto from "../assets/profile_photo.jpg";
 import resumePdf from "../assets/dylan_sharp_resume.pdf";
 import coverImage from "../assets/cover.jpg";
 

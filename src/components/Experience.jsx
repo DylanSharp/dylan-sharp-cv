@@ -2,7 +2,7 @@ import ghostLogo from '../assets/ghost_logo.png';
 import hotjarLogo from '../assets/hotjar_logo.png';
 import stratechLogo from '../assets/stratech_logo.png';
 import modalityAppsLogo from '../assets/ma_logo.png';
-import {BriefcaseIcon} from "../assets/briefcase.jsx";
+import {SunIcon} from "./SunIcon.jsx";
 
 const experienceItems = [
     {
@@ -10,11 +10,8 @@ const experienceItems = [
         company: 'Ghost',
         location: 'Remote (Singapore Based)',
         dateRange: 'Oct 2022 - Present',
-        logo: (
-            <a href="https://ghost.org/" target="_blank" referrerPolicy="no-referrer">
-                <img src={ghostLogo} alt="logo" className="w-10 h-10 object-contain"/>
-            </a>
-        ),
+        link: "https://ghost.org/",
+        logo: <img src={ghostLogo} alt="logo" className="w-10 h-10 object-contain"/>,
         description: 'This was a 3 month project-based contract to build an internal tool for the Ghost team.',
         bulletPoints: [
             'Built a React app to replace a CLI tool that the support team uses to manage users and accounts etc.',
@@ -25,7 +22,7 @@ const experienceItems = [
         company: 'NA',
         location: 'South Africa',
         dateRange: 'March 2021 - Oct 2022',
-        logo: <BriefcaseIcon />,
+        logo: <SunIcon/>,
         description: 'I took time off to spend with my family and try new things.',
         bulletPoints: [
             'Spent time with my my wife and (at the time) newborn son.',
@@ -39,11 +36,8 @@ const experienceItems = [
         company: 'Hotjar',
         location: 'Remote (Malta Based)',
         dateRange: 'Dec 2017 - March 2021',
-        logo: (
-            <a href="https://hotjar.com/" target="_blank" referrerPolicy="no-referrer">
-                <img src={hotjarLogo} alt="logo" className="w-10 h-10 object-contain scale-[1.6]"/>
-            </a>
-        ),
+        link: "https://hotjar.com/",
+        logo: <img src={hotjarLogo} alt="logo" className="w-10 h-10 object-contain scale-[1.6]"/>,
         description: 'Hotjar is a very successful, data heavy product with over a million daily active users consuming data from tens of billions of site sessions a month.',
         bulletPoints: [
             'Worked primary on internal support tools including a React app, a chrome extension and other integrations.',
@@ -58,13 +52,8 @@ const experienceItems = [
         company: 'Stratech',
         location: 'Remote (South Africa Based)',
         dateRange: 'Nov 2016 - Oct 2017',
-        logo: (
-            <a href="https://stratech.co.za/" target="_blank" referrerPolicy="no-referrer">
-                <img src={stratechLogo}
-                     alt="logo"
-                     className="w-10 h-10 object-contain rounded-lg"/>
-            </a>
-        ),
+        link: "https://stratech.co.za/",
+        logo: <img src={stratechLogo} alt="logo" className="w-10 h-10 object-contain rounded-lg"/>,
         description: 'Contracted engineering work building fintech related solutions for clients.',
         bulletPoints: [
             'Lead backend developer on several diverse projects in the fintech space.',
@@ -77,13 +66,8 @@ const experienceItems = [
         company: 'Modality Apps',
         location: '50% Remote (South Africa Based)',
         dateRange: 'Mar 2015 - Oct 2016',
-        logo: (
-            <a href="https://modalityapps.com" target="_blank" referrerPolicy="no-referrer">
-                <img src={modalityAppsLogo}
-                     alt="logo"
-                     className="w-10 h-10 object-contain rounded-lg"/>
-            </a>
-        ),
+        link: "https://modalityapps.com/",
+        logo: <img src={modalityAppsLogo} alt="logo" className="w-10 h-10 object-contain rounded-lg"/>,
         description: 'Hybrid Mobile Apps for Business',
         bulletPoints: [
             'Primary full-stack developer on web apps to provide "back office" interfaces for hybrid mobile apps.',
@@ -96,7 +80,12 @@ const experienceItems = [
 function ExperienceBlock({item, index}) {
     return (
         <div key={index} className="mb-5 item-section">
-            {item.logo}
+            {item.link ? (
+                <a href={item.link} target="_blank" rel="noreferrer"
+                   className="text-blue-500 hover:text-blue-600">{item.logo}</a>
+            ) : (
+                item.logo
+            )}
             <div className="w-full space-y-5">
                 <div className="item-header">
                     <div className="space-y-1.5">
@@ -109,7 +98,11 @@ function ExperienceBlock({item, index}) {
                                           strokeWidth="2"
                                           d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                                 </svg>
-                                <span>{item.company}</span>
+                                {item.link ? (
+                                    <a href={item.link} target="_blank" rel="noreferrer">{item.company}</a>
+                                ) : (
+                                    <span>{item.company}</span>
+                                )}
                             </div>
                             <div className="item-header-info">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4"
