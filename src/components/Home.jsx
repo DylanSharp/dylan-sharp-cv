@@ -10,7 +10,7 @@ import AboutMe from "./AboutMe.jsx";
 const HomePage = () => {
     return (
         <>
-            <main className="main-container">
+            <main className="main-container mb-10">
                 <div className="grid gap-5 lg:grid-cols-3">
                     {/* Side Panel */}
                     <div className="space-y-5">
