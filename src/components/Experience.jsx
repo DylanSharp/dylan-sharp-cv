@@ -42,7 +42,7 @@ const experienceItems = [
         bulletPoints: [
             'Worked primary on internal support tools including a React app, a chrome extension and other integrations.',
             'Built and maintained Rest APIs in Flask.',
-            'Was an interim-team lead for 4 months as  while the other team lead was on paternity leave.',
+            'Was an interim-team lead for 4 months while the other team lead was on paternity leave.',
             'Mentored more junior engineers in my own team and in the support department.',
             'Progressed well on the on internal development track and earned title of "Specialist" in my area.'
         ]
@@ -58,7 +58,7 @@ const experienceItems = [
         bulletPoints: [
             'Lead backend developer on several diverse projects in the fintech space.',
             'Systems architecture and planning.',
-            'Front end developer on hybrid mobile applications using Ionic 2 (Angular 2).',
+            'Front end developer on hybrid mobile applications using Ionic.',
         ]
     },
     {
