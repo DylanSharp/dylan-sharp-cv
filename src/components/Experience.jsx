@@ -9,7 +9,7 @@ const experienceItems = [
         title: 'Software Engineer',
         company: 'Ghost',
         location: 'Remote (Singapore Based)',
-        dateRange: 'Oct 2022 - Present',
+        dateRange: 'Oct 2022 - Dec 2022',
         link: "https://ghost.org/",
         logo: <img src={ghostLogo} alt="logo" className="w-10 h-10 object-contain"/>,
         description: 'This was a 3 month project-based contract to build an internal tool for the Ghost team.',
